@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+		<LinearLayout 
+		   android:layout_width="match_parent"
+           android:layout_height="0dp"
+	       android:layout_weight="5"
+           android:layout_gravity="center"
+           android:gravity="center">
+		   <GridLayout
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:alignmentMode="alignBounds"
+	           android:rowCount="3"
+	           android:columnCount="4"
+	           android:columnOrderPreserved="false"
+	           android:gravity="center"
+	           android:rowOrderPreserved="true"
+	           android:useDefaultMargins="true" >
+	
+				<Button 
+				    android:id="@+id/tv_menu"
+				    android:text="@string/tv_menu"
+				    android:background="@drawable/button_bg_style"/>
+				<Button
+				    android:id="@+id/tv_back" 
+				    android:text="@string/tv_back"
+				    android:background="@drawable/button_bg_style"/>
+				<Button 
+				    android:id="@+id/tv_mute"
+				    android:text="@string/tv_mute"
+				    android:background="@drawable/button_bg_style"/>
+				<Button 
+				    android:id="@+id/tv_standby"
+				    android:text="@string/tv_standby"
+				    android:background="@drawable/button_bg_style"/>
+				<Button
+				    android:id="@+id/tv_signal" 
+				    android:text="@string/tv_signal"
+				    android:background="@drawable/button_bg_style"/>
+	        </GridLayout>
+		</LinearLayout>
+    </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginLeft="40dp"
+	        android:layout_marginRight="40dp"
+	        android:layout_weight="3"
+	        android:background="@drawable/area_bg" >
+
+	        <ImageButton
+	            android:id="@+id/tv_channnel_plus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:background="#00FFFFFF"
+	            android:src="@drawable/tv_channel_plus" />
+
+	        <Button
+	            android:id="@+id/tv_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:background="@drawable/ac_auto"
+	            android:text="@string/tv_ok" />
+
+	        <ImageButton
+	            android:id="@+id/tv_volume_minus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="40dp"
+	            android:background="#00FFFFFF"
+	            android:src="@drawable/tv_volume_minus" />
+
+	        <ImageButton
+	            android:id="@+id/tv_volume_plus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="30dp"
+	            android:background="#00FFFFFF"
+	            android:src="@drawable/tv_volume_plus" />
+
+	        <ImageButton
+	            android:id="@+id/tv_channel_minus"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:background="#00FFFFFF"
+	            android:src="@drawable/tv_channel_miuns" />
+
+	    </RelativeLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_gravity="center"
+	        android:layout_marginBottom="25dp"
+	        android:layout_marginTop="25dp"
+	        android:layout_weight="1"
+	        android:gravity="center" >
+
+	        <Button
+	            android:id="@+id/tv_open"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp"
+	            android:background="@drawable/button_bg_style"
+	            android:text="@string/tv_open" />
+
+	        <Button
+	            android:id="@+id/tv_close"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:background="@drawable/button_bg_style"
+	            android:text="@string/tv_close" />
+
+	    </LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

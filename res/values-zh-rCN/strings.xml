@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Joyrill</string>
+    <string name="app_telstr">电话:</string>
+    <string name="app_dbv">数据版本号:</string>
+    <string name="app_webstr">网址:</string>
+    <string name="app_msg_exit">退出系统吗?</string>
+
+    <string name="nonetwork">无网络信号</string>
+    <string name="noconnected">服务器错误</string>
+    <string name="nouser">用户名或者密码错误</string>
+    
+	<string name="status_on">开</string>
+	<string name="status_off">关</string>
+    <string name="status_error">数据错误</string>
+	
+    <string name="item_open">开启</string>
+    <string name="item_close">关闭</string>
+    <string name="item_stop">停止</string>
+    <string name="item_run">执行</string>
+    <string name="item_power">电源</string>
+    <string name="item_mute">静音</string>
+    <string name="item_more">>>></string>
+    
+    <string name="device_socket">插座</string>
+    <string name="device_light">灯光</string>
+    <string name="device_aircondition">空调</string>
+    
+    <!-- login_ui -->
+    <string name="login_ui_login_title">登录....</string>
+    <string name="login_ui_login_username">用户名</string>
+    <string name="login_ui_login_password">密     码</string>
+    <string name="login_ui_login_internet">外部地址</string>
+    <string name="login_ui_login_interant">内部地址</string>
+    <string name="login_ui_login_port">端    口</string>
+    <string name="login_ui_login_type">类    型</string>
+    <string name="login_ui_login_btn">登录</string>
+    <string name="login_ui_login_savepassword">记住密码</string>
+    <string name="login_ui_login_autologin">自动登录</string>
+    <string name="login_ui_demo_btn">演示</string>
+    <string name="login_ui_login_submit">确定</string>
+    
+    <string name="msg_btn_yes">確定</string>
+    <string name="msg_btn_no">取消</string>
+    
+    <string name="menu_ui_area">区域</string>
+    <string name="menu_ui_type">类型</string>
+    <string name="menu_ui_scene">场景</string>
+    <string name="menu_ui_clock">定时</string>
+    <string name="menu_ui_music">音乐</string>
+    <string name="menu_ui_monitor">监控</string>
+    <string name="menu_ui_security">安防</string>
+    <string name="menu_ui_weather">天气</string>
+    <string name="menu_ui_setting">设置</string>
+    
+    <string name="security_ui_outdoorarming">室外布防</string>
+    <string name="security_ui_outdoordisarming">室外撤防</string>
+    <string name="security_ui_indoorarming">室内布防</string>
+    <string name="security_ui_indoordisarming">室内撤防</string>
+    <string name="security_ui_immediate">立即</string>
+    <string name="security_ui_delay">延迟</string>
+    
+    <string name="tv_volume_plus">音量+</string>
+    <string name="tv_volume_minus">音量-</string>
+    <string name="tv_channnel_plus">频道+</string>
+    <string name="tv_channel_minus">频道-</string>
+    <string name="tv_ok">确定</string>
+    <string name="tv_menu">菜单</string>
+    <string name="tv_back">返回</string>
+    <string name="tv_mute">静音</string>
+    <string name="tv_standby">待机</string>
+    <string name="tv_signal">信号源</string>
+    <string name="tv_open">开启</string>
+    <string name="tv_close">关闭</string>
+    
+    <string name="air_open">开机</string>
+    <string name="air_close">关机</string>
+    <string name="air_leftandrightwind">左右风</string>
+    <string name="air_upanddownwind">上下风</string>
+    <string name="air_brute">强力</string>
+    <string name="air_sleep">睡眠</string>
+    <string name="air_refrigeration">制冷</string>
+    <string name="air_heating">制热</string>
+    <string name="air_auto">自动</string>
+    
+    <string name="dvd_menu">菜单</string>
+    <string name="dvd_ok">OK</string>
+    <string name="dvd_mute">静音</string>
+    <string name="dvd_standby">待机</string>
+    <string name="dvd_previous">上一首</string>
+    <string name="dvd_next">下一首</string>
+    <string name="dvd_volume_plus">音量+</string>
+    <string name="dvd_volume_minus">音量-</string>
+    <string name="dvd_schema">模式</string>
+    <string name="dvd_play">播放</string>
+    <string name="dvd_pause">暂停</string>
+    <string name="dvd_ff">快进</string>
+    <string name="dvd_rew">快退</string>
+    
+    <string name="setting_about_tel">电话</string>
+    <string name="setting_about_website">网址</string>
+    <string name="setting_about_address">地址</string>
+    <string name="setting_save">保存</string>
+    <string name="setting_remberpassword">记住密码</string>
+    <string name="setting_auto_login">自动登录</string>
+    <string name="setting_host_date">主机日期</string>
+    <string name="setting_host_time">主机时间</string>
+    <string name="setting_user_id">用户ID</string>
+    <string name="setting_edit">修改</string>
+    <string name="setting_sync">数据库同步</string>
+    <string name="setting_date_error">获取日期错误</string>
+    <string name="setting_time_error">获取时间错误</string>
+    <string name="setting_status_on">开</string>
+    <string name="setting_status_off">关</string>
+    
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    
+    
+    <string name="about_telephone">400\-646\-7866</string>
+    <string name="about_website">http://www.joyrill.com</string>
+    <string name="about_address">广州市天河软件园高唐新健区广州互联网产业园1号楼</string>
+    
+    <string name="imagedesc"></string>
+    
+    
+    <string name="connecting">正在连接...</string>
+    <string name="videoing">录像中...</string>
+    <string name="main_show_back">再按一次，退出程序！</string>
+    <string name="ptz_control">请按菜单键,进行云台控制</string>
+    <string name="pppp_status_disconnect">断线</string>
+    <string name="exit_show">   提示：</string>
+    <string name="exit_play_show">确认退出播放?</string>
+    <string name="str_ok">确定</string>
+    <string name="str_cancel">取消</string>
+    <string name="eixt_show_toast">本地录像中，请先停止再退出！</string>
+    <string name="exit">退出</string>
+    <string name="exit_alert">确认退出吗 ?</string>
+    <string name="ptz_default_vedio_params">视频参数恢复默认值</string>
+    <string name="p2p_relay_mode_time_out">转发模式观看,剩余时间:</string>
+	<string name="str_second">秒</string>
+	<string name="p2p_view_time_out">已到观看时间</string>
+	<string name="alerm_motion_alarm">移动侦测报警</string>
+	<string name="alerm_gpio_alarm">IO联动报警</string>
+    
+</resources>

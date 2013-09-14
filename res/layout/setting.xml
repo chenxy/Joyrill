@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/settingList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:choiceMode="singleChoice" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/setting_about_tel" />
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/about_telephone" />
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/setting_about_website" />
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/about_website" />
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/setting_about_address" />
+
+            <TextView
+                style="@style/text_style"
+                android:text="@string/about_address"
+                android:width="300dp" />
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="300dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginRight="100dp"
+                android:layout_weight="2" >
+
+                <ListView
+                    android:id="@+id/languageList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/setting_language_bg"
+                    android:dividerHeight="5dp" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/settingSaveLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_bg_style"
+                    android:text="@string/setting_save" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:useDefaultMargins="true" >
+
+            <Space android:layout_rowSpan="1" />
+
+            <CheckBox
+                android:id="@+id/settingSavePassword"
+                android:text="@string/setting_remberpassword" />
+
+            <CheckBox
+                android:id="@+id/settingAutoLogin"
+                android:text="@string/setting_auto_login" />
+
+            <TextView android:text="@string/setting_host_date" 
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/dateText"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill" />
+
+            <TextView android:text="@string/setting_host_time"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/timeText"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill" />
+
+            <TextView android:text="@string/setting_user_id"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill" />
+
+            <Space android:layout_columnSpan="1" />
+
+            <Button
+                android:id="@+id/databaseSync"
+                android:layout_columnSpan="2"
+                android:background="@drawable/button_bg_style"
+                android:text="@string/setting_sync" />
+
+            <Space android:layout_rowSpan="1" />
+
+            <Button
+                android:id="@+id/setting_edit"
+                android:layout_columnSpan="2"
+                android:background="@drawable/button_bg_style"
+                android:text="@string/setting_edit" />
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

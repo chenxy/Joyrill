@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/containerBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:measureAllChildren="true">
+
+       		<include layout="@layout/area"/>
+       		
+    </LinearLayout>
+
+    <include layout="@layout/menu" />
+
+</LinearLayout>

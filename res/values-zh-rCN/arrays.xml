@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string-array name="monitor_address">
+        <item>客厅</item>
+        <item>走廊</item>
+    </string-array> 
+    <string-array name="setting_list">
+        <item>主机参数</item>
+        <item>语言设置</item>
+        <item>关于我们</item>
+    </string-array>
+    <string-array name="language_list">
+        <item>英语</item>
+        <item>简体中文</item>
+    </string-array>
+    <string-array name="net_list">
+        <item>内网</item>
+        <item>外网</item>
+    </string-array>
+</resources>

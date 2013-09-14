@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:layout_margin="25dp"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/musicListView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/music_list_bg" >
+	</ListView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/musicStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/music_stop_style" />
+
+            <ImageButton
+                android:id="@+id/musicPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/music_pre_style" />
+
+            <ImageButton
+                android:id="@+id/musicPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/music_play_style"
+                android:src="@drawable/music_play_head" />
+
+            <ImageButton
+                android:id="@+id/musicNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/music_next_style" />
+
+            <ImageButton
+                android:id="@+id/musicPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:src="@drawable/music_pause_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom|center" >
+
+            <TextView
+                android:id="@+id/musicSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:drawableTop="@drawable/music_single"
+                android:text="单曲播放"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/musicSingleLoop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:drawableTop="@drawable/music_singleloop"
+                android:text="单曲循环"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/musicLoop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:drawableTop="@drawable/music_loop"
+                android:text="列表循环"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/musicOrder"
+                android:drawableTop="@drawable/music_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顺序播放"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/musicVolumeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/music_voice" 
+                android:contentDescription="@string/imagedesc"/>
+
+            <SeekBar
+                android:id="@+id/musicVolumeBar"
+                android:layout_width="300dp"
+                android:max="255"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:progress="50"
+                android:layout_height="wrap_content"
+                />
+            
+            <TextView 
+                android:id="@+id/musicVolumeProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

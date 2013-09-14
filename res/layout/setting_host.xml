@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alignmentMode="alignMargins"
+    android:columnCount="3"
+    android:rowCount="4"
+    android:useDefaultMargins="true" >
+
+    <Space android:layout_rowSpan="1" />
+
+    <CheckBox
+        android:id="@+id/settingSavePassword"
+        android:text="@string/setting_remberpassword" />
+
+    <CheckBox
+        android:id="@+id/settingAutoLogin"
+        android:text="@string/setting_auto_login" />
+
+    <TextView android:text="@string/setting_host_date" />
+
+    <EditText
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+
+    <TextView android:text="@string/setting_host_time" />
+
+    <EditText
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+
+    <TextView android:text="@string/setting_user_id" />
+
+    <EditText
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill" />
+
+    <Space android:layout_columnSpan="1"/>
+    <Button
+        android:layout_columnSpan="2"
+        android:background="@drawable/button_bg_style"
+        android:text="@string/setting_sync" />
+    
+	<Space android:layout_columnSpan="1"/>
+	
+    <Button
+        android:layout_columnSpan="2"
+        android:background="@drawable/button_bg_style"
+        android:text="@string/setting_edit" />
+
+</GridLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="25dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center" >
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alignmentMode="alignBounds"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                android:gravity="center"
+                android:rowCount="4"
+                android:rowOrderPreserved="true"
+                android:useDefaultMargins="true" >
+
+                <Button
+                    android:id="@+id/air_leftandrightwind"
+                    android:background="@drawable/button_bg_style"
+                    android:text="@string/air_leftandrightwind" />
+
+                <Button
+                    android:id="@+id/air_upanddownwind"
+                    android:background="@drawable/button_bg_style"
+                    android:text="@string/air_upanddownwind" />
+
+                <Button
+                    android:id="@+id/air_brute"
+                    android:background="@drawable/button_bg_style"
+                    android:text="@string/air_brute" />
+
+                <Button
+                    android:id="@+id/air_sleep"
+                    android:background="@drawable/button_bg_style"
+                    android:text="@string/air_sleep" />
+
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/air_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="38℃"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <SeekBar
+                android:id="@+id/air_temperature_seekbar"
+                style="@android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:progress="10"
+                android:max="255"
+                android:progressDrawable="@drawable/seek_bg_style"
+                android:thumb="@drawable/seek_thumb_style"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/area_bg" >
+
+            <ImageButton
+                android:id="@+id/air_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ac_model"
+                android:contentDescription="@string/imagedesc"/>
+
+            <Button
+                android:id="@+id/air_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ac_auto"
+                android:text="@string/air_auto" />
+
+            <ImageButton
+                android:id="@+id/air_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ac_cold"
+                android:contentDescription="@string/imagedesc"/>
+
+            <ImageButton
+                android:id="@+id/air_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ac_hot"
+                android:contentDescription="@string/imagedesc"/>
+
+            <ImageButton
+                android:id="@+id/air_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ac_wind" 
+                android:contentDescription="@string/imagedesc"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/air_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_bg_style"
+                android:text="@string/air_open" />
+
+            <Button
+                android:id="@+id/air_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_bg_style"
+                android:text="@string/air_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
